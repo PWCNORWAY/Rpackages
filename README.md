@@ -1,12 +1,5 @@
 # Rpackages
+install.packages("rClr", repos = paste("file:", normalizePath(getwd(), winslash = "/"), sep = ""), type = "win.binary")
 
-#python server
-python -m SimpleHTTPServer 8000
+tools::write_PACKAGES("bin/windows/contrib/3.4/.", type="win.binary")
 
-update.packages(repos="http://localhost:8000", ask=FALSE)
-
-# R server
-library(servr)
-setwd("<cloned repo dir>")
-servr::httd()
-update.packages(repos="http://localhost:7826", ask=FALSE)
