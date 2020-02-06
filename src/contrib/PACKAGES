@@ -1,0 +1,7 @@
+Package: rClr
+Version: 0.8.3
+Depends: R (>= 2.15.0), methods
+Suggests: testthat, knitr, xtable
+License: LGPL-3
+MD5sum: ad65494a851779db488df3c46caa1bfe
+NeedsCompilation: yes
